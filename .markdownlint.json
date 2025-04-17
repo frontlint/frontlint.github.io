@@ -1,0 +1,3 @@
+{
+  "extends": "./packages/markdownconfig/index.json"
+}

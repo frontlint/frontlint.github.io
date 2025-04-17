@@ -1,0 +1,12 @@
+{
+  "name": "@frontlint/markdownconfig",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.json",
+  "scripts": {},
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Shibin",
+  "license": "MIT"
+}
