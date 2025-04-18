@@ -11,6 +11,7 @@ export default defineConfig({
           text: '指南',
           items: [
             { text: '快速开始', link: '/guide/getting-started' },
+            { text: 'stylelint', link: '/guide/stylelint' },
             { text: 'commitlint', link: '/guide/commitlint' },
             { text: 'markdownlint', link: '/guide/markdownlint' },
           ],
@@ -36,6 +37,6 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
     skipToContentLabel: '跳转到内容',
     returnToTopLabel: '返回顶部',
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/frontlint/frontlint.github.io' }],
   },
 })

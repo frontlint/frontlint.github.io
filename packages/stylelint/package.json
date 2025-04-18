@@ -1,0 +1,23 @@
+{
+  "name": "@fontlint/stylelint",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "stylelint"
+  ],
+  "author": "Shibin",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^3.1.1"
+  }
+}

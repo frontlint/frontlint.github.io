@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.json",
+  "files": [
+    "index.json",
+    "README.md"
+  ],
   "scripts": {},
   "keywords": [
     "markdown"
