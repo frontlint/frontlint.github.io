@@ -44,9 +44,6 @@ importers:
       stylelint-config-standard-scss:
         specifier: ^14.0.0
         version: 14.0.0(postcss@8.5.3)(stylelint@16.18.0(typescript@5.8.3))
-      stylelint-order:
-        specifier: ^6.0.4
-        version: 6.0.4(stylelint@16.18.0(typescript@5.8.3))
       tsdown:
         specifier: ^0.8.0
         version: 0.8.0(typescript@5.8.3)
@@ -76,6 +73,13 @@ importers:
   packages/markdownconfig: {}
 
   packages/stylelint:
+    dependencies:
+      stylelint-config-standard-scss:
+        specifier: ^14.0.0
+        version: 14.0.0(postcss@8.5.3)(stylelint@16.18.0(typescript@5.8.3))
+      stylelint-order:
+        specifier: ^6.0.4
+        version: 6.0.4(stylelint@16.18.0(typescript@5.8.3))
     devDependencies:
       vitest:
         specifier: ^3.1.1
