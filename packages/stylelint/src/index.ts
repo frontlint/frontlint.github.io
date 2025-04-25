@@ -1,5 +1,5 @@
 import type { Config } from 'stylelint'
-import stylelint from 'stylelint'
+import type stylelint from 'stylelint'
 import orderConfig from './properties-order'
 
 export interface StylelintConfig {
@@ -12,23 +12,25 @@ export function defineConfig(
     scss: true,
     order: true,
   },
-) {
+): Config & {
+  extends: string[]
+  plugins: Array<string | stylelint.Plugin>
+  rules: Record<string, stylelint.ConfigRuleSettings<unknown, object>>
+} {
   const stylelintConfig: Config & {
     extends: string[]
-    plugins: (string | stylelint.Plugin)[]
-    rules: {
-      [ruleName: string]: stylelint.ConfigRuleSettings<unknown, object>
-    }
+    plugins: Array<string | stylelint.Plugin>
+    rules: Record<string, stylelint.ConfigRuleSettings<unknown, object>>
   } = {
     extends: ['stylelint-config-standard'],
     ignoreFiles: ['**/node_modules/**', '**/dist/**', '**/coverage/**'],
     plugins: [],
     rules: {},
   }
-  if (config.scss) {
+  if (config.scss ?? false) {
     stylelintConfig.extends = ['stylelint-config-standard-scss']
   }
-  if (config.order) {
+  if (config.order ?? false) {
     stylelintConfig.plugins.push('stylelint-order')
     stylelintConfig.rules['order/properties-order'] = orderConfig
   }

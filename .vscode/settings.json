@@ -3,5 +3,14 @@
     "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
-  "stylelint.validate": ["css", "scss", "less"]
+  "stylelint.validate": ["css", "scss", "less"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "json"
+  ]
 }

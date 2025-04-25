@@ -9,11 +9,16 @@ export default defineConfig({
       '/guide/': [
         {
           text: '指南',
+          items: [{ text: '快速开始', link: '/guide/getting-started' }],
+        },
+        {
+          text: 'npm包',
+          collapsed: true,
           items: [
-            { text: '快速开始', link: '/guide/getting-started' },
-            { text: 'stylelint', link: '/guide/stylelint' },
-            { text: 'commitlint', link: '/guide/commitlint' },
-            { text: 'markdownlint', link: '/guide/markdownlint' },
+            { text: '@frontlint/eslint', link: '/guide/eslint' },
+            { text: '@frontlint/stylelint', link: '/guide/stylelint' },
+            { text: '@frontlint/commitlint', link: '/guide/commitlint' },
+            { text: '@frontlint/markdownlint', link: '/guide/markdownlint' },
           ],
         },
       ],
