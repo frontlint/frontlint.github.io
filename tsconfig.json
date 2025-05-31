@@ -8,6 +8,16 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "bundler",
-  }
+    "moduleResolution": "bundler"
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.js",
+    "eslint.config.ts",
+    ".stylelintrc.js",
+    "commitlint.config.ts",
+    "docs/**/*.ts",
+    "docs/.vitepress/**/*.ts",
+    "packages/eslint/src/index.js"
+  ]
 }

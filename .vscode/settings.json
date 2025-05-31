@@ -2,5 +2,15 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "stylelint.validate": ["css", "scss", "less"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "json"
+  ]
 }

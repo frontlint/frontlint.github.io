@@ -1,10 +1,12 @@
 {
-  "name": "@fontlint/stylelint",
+  "name": "@frontlint/stylelint",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "dist/index.js",
   "files": [
     "dist",
+    "package.json",
     "README.md"
   ],
   "scripts": {
@@ -13,11 +15,17 @@
     "test:coverage": "vitest run --coverage"
   },
   "keywords": [
-    "stylelint"
+    "stylelint",
+    "stylelint-config-standard-scss",
+    "stylelint-order"
   ],
   "author": "Shibin",
   "license": "MIT",
   "devDependencies": {
     "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^6.0.4"
   }
 }

@@ -1,22 +1,16 @@
-import tseslint from 'typescript-eslint'
-import prettier from 'eslint-plugin-prettier'
+import tslint from 'typescript-eslint'
+import config from './packages/eslint/src/ts'
 
-export default tseslint.config([
+export default tslint.config([
+  ...config,
   {
     ignores: [
       'node_modules/**',
       'packages/*/node_modules',
       'packages/*/dist',
       'docs/.vitepress/cache',
+      'packages/*/coverage',
+      'dist/**',
     ],
-  },
-  tseslint.configs.recommended,
-  {
-    plugins: {
-      prettier,
-    },
-    rules: {
-      'prettier/prettier': 'error',
-    },
   },
 ])
